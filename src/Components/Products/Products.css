@@ -1,5 +1,17 @@
-.products h3 {
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
-}
+ .products {
+     text-align: center;
+     margin-top: 50px;
+ }
+
+ .products h3 {
+     color: black;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-size: 25px;
+     font-weight: 400;
+     line-height: 40px;
+ }
+
+ .products h3 span {
+     margin-top: 2px;
+     /* color: #8d5069; */
+ }
