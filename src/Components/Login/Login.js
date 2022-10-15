@@ -1,11 +1,30 @@
+import { getAuth } from 'firebase/auth';
 import React from 'react';
-import './Login.css'
+import { useSignInWithGoogle } from "react-firebase-hooks/auth"
+import { useLocation, useNavigate } from 'react-router-dom';
+import app from '../../firebase.init';
+import './Login.css';
 
+const auth = getAuth(app)
 const Login = () => {
+    const [handleGoogleSignIn,] = useSignInWithGoogle(auth);
+    const location = useLocation();
+    const navigate = useNavigate();
+
+    const from = location?.state?.from.pathName || '/';
+
+    const GoogleSignIn = () => {
+        handleGoogleSignIn()
+            .then(() => {
+                navigate(from, { replace: true })
+            })
+
+    }
+
     return (
         <div className='login'>
             <h3>Please Login</h3>
-            <button className='thirdPartyLogin'>Google</button>
+            <button onClick={GoogleSignIn} className='thirdPartyLogin'>Google</button>
             <button className='thirdPartyLogin'>Facebook</button>
             <button className='thirdPartyLogin'>Github</button>
 
