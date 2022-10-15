@@ -1,5 +1,22 @@
-.header h2 {
+.header {
+    background-color: #DEB6AB;
+    text-align: center;
+    padding: 15px 0px;
+    margin-bottom: 70px;
+}
+
+.header nav a {
+    background-color: #DEB6AB;
+    margin-right: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header nav a:hover {
+    background-color: white !important;
 }

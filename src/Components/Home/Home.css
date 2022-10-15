@@ -1,5 +1,17 @@
+.home {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.home p {
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+
 .home h3 {
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    font-weight: 400;
 }
