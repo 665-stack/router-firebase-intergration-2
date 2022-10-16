@@ -13,5 +13,9 @@
 
  .products h3 span {
      margin-top: 2px;
-     /* color: #8d5069; */
+ }
+
+ .userNameInProducts {
+     text-transform: capitalize;
+     font-style: italic;
  }
