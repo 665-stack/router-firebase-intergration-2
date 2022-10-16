@@ -23,7 +23,7 @@ const Login = () => {
 
     return (
         <div className='login'>
-            <h3>Please Login</h3>
+            < h3 > Please Login</ h3>
             <button onClick={GoogleSignIn} className='thirdPartyLogin'>Google</button>
             <button className='thirdPartyLogin'>Facebook</button>
             <button className='thirdPartyLogin'>Github</button>
@@ -40,7 +40,7 @@ const Login = () => {
                 <button className='submit-btn' type="submit">Login</button>
             </form>
 
-        </div>
+        </div >
     );
 };
 

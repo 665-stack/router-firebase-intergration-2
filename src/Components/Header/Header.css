@@ -19,3 +19,19 @@
 .header nav a:hover {
     background-color: white !important;
 }
+
+.userNameInHeader {
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.signOut-btn {
+    margin-left: 20px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+}
